@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    <%= titolo %>
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script type="text/javascript" lang="javascript" src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      var auth = getCookie('AuthToken')
+      if (auth != '') {
+        $('#acclog').html(
+          '<li class="nav-itembtn-nv "><a class="btn btn-outline-login" href="/login">Account</a></li>');
+      }
+    })
+  </script>
+  <nav class="navbar navbar-expand-sm navbar-custom fixed-top">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="index.html">
+        <img src="profile.png" alt="logo" style="width:50px;">
+      </a>
+      <a class="navbar-brand" href="index.html">
+        <h1 class="titlestyle">Moodies</h1>
+      </a>
+      <ul class="nav navbar-nav ms-auto justify-content-end btn-nv">
+        <div id="acclog">
+          <li class="nav-item"><a class="btn btn-outline-login" href="/login">Login</a></li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <div class="text-center titoloschedafilm pop-writing">
+    <h2><%= titolo %></h2>
+  </div>
+  <div class="text-center imgschedafilm">
+    <img src="<%= img %>.jpg"  class="imgMovie">
+    <div class="runtime scheda-responsive">
+      Runtime: <%= runtime %> min
+    </div>
+  </div>
+  <div class="tramaschedafilm" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <%= trama %>
+  </div>
+  <div class="contbtn col-12 col-s-9">
+    <a href="<%= trailer %>" class="text-center btn btn-slot scheda-responsive margine20" style="margin-left: 50px;">View Trailer</a>
+    <button class="text-center btn btn-slot scheda-responsive margine20" style="margin-left: 50px;" onclick="addmovieFun();">Add to my
+      movies</button>
+    <button id="traktbtn" onclick="addTraktFun();" class="text-center btn btn-slot scheda-responsive margine20">Add to my Trakt.tv
+      whatchlist</a>
+  </div>
+  <div class="text-center">
+    <div class="margine20 text-center" style="margin-right: 10px; color: white;" id="mymoviediv"><br></div>
+  </div>
+  <% if (typeof mess !== "undefined") { %>
+  <div class="margine20 text-center" style="margin-right: 10px; color: white;"><%= mess %></div>
+  <% } %>
+  <div id="idMovie" hidden><%= id %></div>
+  <div id="title" translate="no" hidden><%= titolo %></div>
+  <div class="padding-bottom"></div>
+</body>
+
+</html>

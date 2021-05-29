@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    Signup
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" lang="javascript" src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+</head>
+
+<body class="text-center" style="padding-top: 100px;">
+  <nav class="navbar navbar-expand-sm navbar-custom fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="profile.png" alt="logo" style="width:50px;">
+      </a>
+      <a class="navbar-brand" href="index.html">
+        <h1 class="titlestyle">Moodies</h1>
+      </a>
+      <ul class=" nav navbar-nav ms-auto justify-content-end btn-nv">
+        <li class="nav-item">
+        <li class="nav-item"><a class="btn btn-outline-login" href="/login">Login</a></li>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <% if (typeof message !== "undefined") { %>
+  <p><%= message %></p>
+  <% } %>
+
+  <div class="formlogin">
+    <img class="mb-4 mt-4" src="profile.png" alt="" width="72px" height="72px" />
+    <h1 class="mb-4">Signup</h1>
+    <form action="/signup" method="POST" name="myForm">
+      <div class="mb-4">
+        <input type="text" id="InputUsername" class="form-control campoform" name="username" placeholder="Username"
+          required autofocus>
+      </div>
+      <div class="mb-4">
+        <input type="email" id="InputEmail" class="form-control campoform" name="email" aria-describedby="emailHelp"
+          placeholder="Email" required>
+      </div>
+      <div class="mb-4 popup" onclick="Password()">
+        <div onclick="timeout();">
+          <input type="password" name="password" class="form-control campoform" id="InputPassword"
+            placeholder="Password" required>
+          <span class="popuptext" id="myPopup">must be at least 8 characters long</span>
+        </div>
+      </div>
+      <div class="mb-5">
+        <input type="password" name="repeatpassword" class="form-control campoform" id="RepeatPassword"
+          placeholder="Repeat password" required>
+      </div>
+      <button type="submit" class="btn btn-lg btn-dark mb-4" name="loginButton">Sign up</button>
+  </div>
+  </form>
+  </div>
+  <div class="padding-bottom"></div>
+</body>
+
+</html>

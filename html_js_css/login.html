@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+  <title>
+    Login
+  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" lang="javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body class="text-center" style="padding-top: 100px;">
+  <nav class="navbar navbar-expand-sm navbar-custom fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="profile.png" alt="logo" style="width:50px;">
+      </a>
+      <a class="navbar-brand" href="index.html">
+        <h1 class="titlestyle" >Moodies</h1>
+      </a>
+      <ul class=" nav navbar-nav ms-auto justify-content-end">
+        <li class="nav-item">
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <% if (typeof message !== "undefined") { %>
+  <p><%= message %></p>
+  <% } %>
+
+  <!--Ciao sono un commento-->
+  <div class="formlogin">
+    <img class="mb-4 mt-4" src="profile.png" alt="" width="72px" height="72px" />
+    <h1 class="mb-4">Login</h1>
+    <form action="/login" method="POST" name="myForm">
+      <div class="mb-4">
+        <input type="email" id="InputEmail" class="form-control campoform" name="email" aria-describedby="emailHelp"
+          placeholder="Email" required autofocus>
+      </div>
+      <div class="mb-4">
+        <input type="password" name="password" class="form-control campoform" id="InputPassword" placeholder="Password"
+          required>
+      </div>
+      <div class="mb-4 form-check">
+        <input type="checkbox" name="remember" class="remembercheck" />
+        <label for="remember">
+          Remember me
+        </label>
+      </div>
+      <button type="submit" class="btn btn-lg btn-dark mb-5" name="loginButton">Log in</button>
+    </form>
+    <p>Don't have an account?<a href="/signup" class="link-light"><br />
+        <h4>Sign up now!</h4>
+      </a></p>
+  </div>
+  <div class="padding-bottom"></div>
+</body>

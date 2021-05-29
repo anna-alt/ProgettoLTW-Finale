@@ -1,0 +1,636 @@
+:root {
+  --colore-principale: #df0707;
+  --colore-secondario: #980a0a;
+}
+
+p {
+  color: rgb(255, 255, 255);
+}
+
+p1 {
+  color: var(--colore-principale);
+}
+
+
+body {
+  background-image: url('cinema2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow-x: hidden;
+
+
+}
+
+
+
+@media only screen and (min-width:321px) and (max-width:1198px) {
+
+  .btn-responsive {
+    font-size: 0.875em;
+    display: block;
+    left: -60px;
+    margin-top: 35px;
+
+  }
+
+  .profilo-responsive {
+    font-size: 0.875em;
+    display: block;
+    left: auto;
+    margin-top: 35px;
+
+  }
+  .pop-wrap2 {
+    z-index: 2;
+    background-color: whitesmoke;
+    position: fixed;
+    border-radius: 20px;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    transform: translate(-50%, -50%);
+  }
+  .pop-content2 {
+    clear: both;
+    padding: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 18px;
+  }
+  .scheda-responsive {
+    font-size: 0.875em;
+    margin: 0 auto;
+
+  }
+  .btn-responsive2 {
+    font-size: 0.875em;
+   position: sticky;
+    
+  }
+ 
+
+  .logoresp{
+    margin-bottom: 10mm;
+  }
+.btn-responsive-login{
+  size: 20%;
+}
+.btn-nv{
+  border-radius: 0px;
+  height: 16px;
+  margin: 0;
+  color: black;
+  border-color: rgb(26, 12, 12);
+  text-align: center;
+  position:sticky;
+
+}
+.col-s-3 {
+  width: 50%;
+}
+
+
+
+}
+
+@media (max-width: 1199px) {
+
+  .col-s-6 {
+    width: 85%;
+  }
+  .col-s-9 {
+    width: 100%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+
+  .btn-responsive {
+    font-size: 0.875em;
+    display: block;
+    left: auto;
+    margin-top: 35px;
+  }
+
+  .btn-responsive2 {
+    font-size: 0.875em;
+    display: list-item;
+    margin-left: 80px;
+    margin-top: 35px;
+  }
+
+  .profilo-responsive {
+    font-size: 0.875em;
+    display: block;
+    margin-top: 35px;
+  }
+
+  .scheda-responsive {
+    font-size: 0.875em;
+    margin-left: 10%;
+
+  }
+ 
+  .pop-wrap2 {
+    z-index: 2;
+    background-color: whitesmoke;
+    position: fixed;
+    border-radius: 20px;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    height: 60%;
+    transform: translate(-50%, -50%);
+  }
+  .pop-content2 {
+    clear: both;
+    padding: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+.btn-nv{
+  border-radius: 0px;
+  height: 25px;
+  margin: 0;
+  color: black;
+  border-color: rgb(26, 12, 12);
+  text-align: center;
+  position:sticky;
+
+}
+
+
+
+}
+
+
+@media (min-width: 1200px) {
+  .col-3 {
+    width: 40%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
+
+.emojisize {
+  font-size: 30px;
+}
+
+.filmnamecontainer {
+  background-color: var(--colore-principale);
+  color: black;
+  max-width: 300px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+#slot1,
+#slot2,
+#slot3 {
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  background-size: 150px;
+  width: 150px;
+  height: 220px;
+}
+
+.a0 {
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.a1 {
+  background-image: url("../moviesposters/La_La_Land.jpg");
+}
+
+.a2 {
+  background-image: url("../moviesposters/1917.jpg");
+}
+
+.a3 {
+  background-image: url("../moviesposters/The_Ballad_of_Buster_Scruggs.jpg");
+}
+
+.a4 {
+  background-image: url("../moviesposters/The_Big_Lebowski.jpg");
+}
+
+.a5 {
+  background-image: url("../moviesposters/The_Matrix.jpg");
+}
+
+.a6 {
+  background-image: url("../moviesposters/American_Sniper.jpg");
+}
+
+.a7 {
+  background-image: url("../moviesposters/Call_Me_by_Your_Name.jpg");
+}
+
+.a8 {
+  background-image: url("../moviesposters/Per_un_pugno_di_dollari.jpg");
+}
+
+.Slots {
+  border-radius: 40px;
+  background-color: var(--colore-principale);
+  max-width: 600px;
+  margin: 0 auto;
+  border:4px solid black;
+}
+
+.margine20 {
+  margin-top: 20px;
+}
+
+.margine100 {
+  margin-top: 100px;
+}
+
+.margine120 {
+  margin-top: 120px;
+}
+
+.titlestyle {
+  color: white;
+  font-family: "Brush Script MT";
+}
+
+
+.navbar-custom {
+  background-color: var(--colore-principale);
+  height: 55px;
+}
+
+/*colore vecchio: rgb(124, 11, 11)*/
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.padding-bottom {
+  padding: 50px;
+}
+
+.padding-left {
+  padding-left: 250px;
+}
+
+/*--Bottoni--*/
+.btn-slot {
+  background-color: rgba(43, 42, 42, 0.739);
+  color: white;
+  border-radius: 40px 40px 40px 40px;
+
+}
+
+.btn-slot:hover {
+  color: white;
+  background-color: rgb(41, 47, 53);
+
+}
+
+.btn-outline-login {
+  color: black;
+  border-color: rgb(26, 12, 12);
+  border-width: 0.6mm;
+}
+
+.btn-outline-login:hover {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+
+
+.btn-info {
+  color: black;
+  background-color: cornsilk;
+  border-radius: 70px 70px 70px 70px;
+  border-width: 0.02mm;
+}
+
+.btn-custom {
+  color: white;
+  /*colore scritta normalmente*/
+  border-color: var(--colore-principale);
+  /*colore bordo normale*/
+}
+
+.btn-custom:hover {
+  color: white;
+  /*colore scritta quando ci si passa con il mouse*/
+  background-color: var(--colore-secondario);
+  /*colore sfondo quando ci si passa con il mouse*/
+  border-color: var(--colore-principale);
+  /*colore bordo quando ci si passa con il mouse*/
+}
+
+.btn-check-custom:focus+.btn-custom,
+.btn-custom:focus {
+  box-shadow: 0 0 0 0.25rem rgba(186, 12, 12, 0.5);
+  /*colore aura intorno*/
+}
+
+.btn-check-custom:checked+.btn-custom,
+.btn-check-custom:active+.btn-custom,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.dropdown-toggle.show {
+  color: white;
+  /*colore scritta quando checked*/
+  background-color: var(--colore-principale);
+  /*colore sfondo quando checked*/
+  border-color: var(--colore-principale);
+  /*colore bordi quando checked*/
+}
+
+.btn-check-custom:checked+.btn-custom:focus,
+.btn-check-custom:active+.btn-custom:focus,
+.btn-custom:active:focus,
+.btn-custom.active:focus,
+.btn-custom.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(212, 189, 189, 0.5);
+  /*boh*/
+}
+
+.btn-custom:disabled,
+.btn-custom.disabled {
+  color: var(--colore-principale);
+  background-color: transparent;
+}
+
+.btn-check-custom {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+  border-radius: 40px;
+}
+
+.btn-check-custom[disabled]+.btn,
+.btn-check-custom:disabled+.btn {
+  pointer-events: none;
+  filter: sepia(50%);
+  opacity: 0.65;
+}
+
+/*--------*/
+
+
+/*--Popup--*/
+.pop-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.pop-wrap {
+  z-index: 2;
+  background-color: whitesmoke;
+  position: fixed;
+  border-radius: 20px;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+}
+
+.pop-x {
+  z-index: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 15px;
+  background-color: var(--colore-principale);
+  color: black;
+  cursor: pointer;
+
+}
+
+.pop-writing {
+  cursor: pointer;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.pop-content {
+  clear: both;
+  padding: 2.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+
+
+.fa_custom {
+  color:
+    white;
+}
+
+.fa-padding {
+  padding-left: 4mm;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+
+.popup .show {
+  visibility: visible;
+}
+
+/*--Scheda Film--*/
+.contbtn {
+  margin: 0 auto;
+  max-width: fit-content;
+}
+
+.imgschedafilm {
+  margin-bottom: 30px;
+}
+
+.contimgschedafilm {
+  margin-top: 30px;
+  margin-left: 20px;
+  flex-basis: 30%;
+}
+
+.tramaschedafilm {
+  max-width: 60%;
+  font-size: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 40px;
+  color: white;
+  background-color: #df0707b2;
+  margin: 0 auto;
+}
+
+.titoloschedafilm {
+  margin-top: 100px;
+  color: white;
+}
+.runtime {
+  margin: 0 auto;
+  width: 200px;
+  color: white;
+  margin-top: 30px;
+  box-shadow: 5px 5px 3px goldenrod;
+  background-color: rgba(255, 208, 0, 0.452);
+  vertical-align: middle;
+  border: 1px solid goldenrod;
+}
+
+.messagemoviepage{
+  margin: 0 auto;
+  max-width: max-content;
+  padding-right: 7px;
+  padding-left: 7px;
+  color: white;
+  margin-top: 30px;
+  box-shadow: 5px 5px 3px var(--colore-secondario);
+  background-color: #df070783;
+  vertical-align: middle;
+  border: 1px solid var(--colore-secondario);
+}
+
+/*--------------*/
+
+.formlogin {
+  width: 300px;
+  height: 570px;
+  margin: 0 auto;
+  color: white;
+  background-color: var(--colore-principale);
+  border-radius: 40px;
+}
+
+.campoform {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.remembercheck {
+  margin-left: -30px;
+}
+
+/*--------*/
+.custom-text {
+  font-weight: bold;
+  font-size: 1.9em;
+  border: 1px solid #cfcfcf;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  color: #999;
+  background: #fff;
+}
+
+.star-rating__checkbox {
+  position: static;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+}
+
+.star-rating__star {
+  display: inline-block;
+  padding: 2px;
+  vertical-align: middle;
+  line-height: 1;
+  font-size: 1.5em;
+  color: #ababab;
+  transition: color 0.2s ease-out;
+}
+
+.star-rating__star:hover {
+  cursor: pointer;
+}
+
+.star-rating__star.is-selected {
+  color: #ffd700;
+}
+
+.usernamestyle {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.link-wrn {
+  cursor: pointer;
+}
+
+
+
+.imgMovie {
+  width: 182px;
+  height: 268px;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+ 
+}
